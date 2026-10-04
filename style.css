@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.app { width: 100%; max-width: 650px; }
+.quote-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0,0,0,.2);
+}
+h1 { font-size: 32px; color: #222; margin-bottom: 8px; }
+.subtitle { color: #666; margin-bottom: 30px; }
+.quote-box {
+  background: #f5f6ff;
+  border-radius: 15px;
+  padding: 30px 25px;
+  margin-bottom: 25px;
+}
+.quote-mark { font-size: 55px; line-height: 35px; color: #667eea; }
+#quote { font-size: 23px; line-height: 1.5; color: #333; margin: 15px 0; }
+#author { font-size: 17px; font-weight: bold; color: #667eea; }
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+  background: #667eea;
+  cursor: pointer;
+}
+button:hover { background: #5568d9; }
+@media (max-width: 600px) {
+  .quote-card { padding: 25px 18px; }
+  h1 { font-size: 26px; }
+  #quote { font-size: 19px; }
+}
